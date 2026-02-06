@@ -1,1 +1,134 @@
-/* your code here */
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+footer{
+  background:#000;
+  color:#fff;
+  width:100%;
+}
+
+/* CONTENT WRAPPER */
+footer .content{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+/* TOP SECTION */
+footer .top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo_name{
+  font-size:32px;
+  font-weight:500;
+}
+
+/* SOCIAL ICONS */
+.media-icons a{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  width:40px;
+  height:40px;
+  margin-left:10px;
+  border-radius:50%;
+  color:#fff;
+  text-decoration:none;
+  font-size:18px;
+}
+
+/* icon colors */
+.media-icons a:nth-child(1){background:#3b5998;}
+.media-icons a:nth-child(2){background:#1da1f2;}
+.media-icons a:nth-child(3){background:#e84393;}
+.media-icons a:nth-child(4){background:#0a66c2;}
+.media-icons a:nth-child(5){background:#ff0000;}
+
+/* LINK BOXES */
+.link-boxes{
+  display:flex;
+  justify-content:space-between;
+  margin-top:40px;
+  flex-wrap:wrap;
+}
+
+.box{
+  list-style:none;
+  width:200px;
+}
+
+.link_name{
+  font-size:18px;
+  margin-bottom:12px;
+  position:relative;
+}
+
+/* underline like screenshot */
+.link_name::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:35px;
+  height:2px;
+  background:#fff;
+}
+
+.box li{
+  margin:8px 0;
+}
+
+.box a{
+  color:#bfbfbf;
+  text-decoration:none;
+  font-size:15px;
+}
+
+.box a:hover{
+  color:#fff;
+}
+
+/* BOTTOM BAR */
+.bottom-details{
+  background:#2f3340;
+  padding:18px 20px;
+}
+
+.bottom-details .bottom_text{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  color:#ccc;
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+  .link-boxes{
+    flex-direction:column;
+  }
+
+  .box{
+    margin-top:20px;
+  }
+
+  footer .top{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .bottom-details .bottom_text{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+  }
+}
