@@ -32,18 +32,23 @@ footer .top{
 }
 
 /* SOCIAL ICONS */
+.media-icons{
+  display:flex;
+  align-items:center;
+}
+
 .media-icons a{
-  display:inline-flex;
+  display:flex;
   justify-content:center;
   align-items:center;
   width:40px;
   height:40px;
-  margin-left:10px;
   border-radius:50%;
-  color:#fff;
+  margin-left:10px;
+  color:white;
   text-decoration:none;
-  font-size:18px;
 }
+
 
 /* icon colors */
 .media-icons a:nth-child(1){background:#3b5998;}
